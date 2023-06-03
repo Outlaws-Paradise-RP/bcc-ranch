@@ -2,7 +2,7 @@ Config = {}
 
 Config.Debug = true --false on live server
 
--- Set Language (Current Languages: "en_lang" English, "fr_lang" French, "de_lang" German)
+-- Set Language (Current Languages: "en_lang")
 Config.defaultlang = "en_lang"
 
 --Webhok Setup
@@ -101,9 +101,17 @@ Config.RanchSetup = {
             CondIncreasePerHerdNotMaxRanchCond = 5, --this is the amount the animals condition will go up per herd if the ranchs condition is not max
             ButcherItems = { --items you will get when you butcher this animal
                 {
-                    name = 'water', --item db name
-                    count = 1, --amount you will get
+                    name = 'leather', --item db name
+                    count = 5, --amount you will get
                 }, --you can add more by copy pasting this table
+                {
+                    name = 'meat', --item db name
+                    count = 8, --amount you will get
+                },
+                {
+                    name = 'milk', --item db name
+                    count = 3, --amount you will get
+                },
             },
         },
         Pigs = {
@@ -122,9 +130,9 @@ Config.RanchSetup = {
             CondIncreasePerHerdNotMaxRanchCond = 5, --this is the amount the animals condition will go up per herd if the ranchs condition is not max
             ButcherItems = { --items you will get when you butcher this animal
                 {
-                    name = '', --item db name
-                    count = 1, --amount you will get
-                }, --you can add more by copy pasting this table
+                    name = 'meat', --item db name
+                    count = 8, --amount you will get
+                },
             },
         },
         Goats = {
@@ -143,9 +151,13 @@ Config.RanchSetup = {
             CondIncreasePerHerdNotMaxRanchCond = 5, --this is the amount the animals condition will go up per herd if the ranchs condition is not max
             ButcherItems = { --items you will get when you butcher this animal
                 {
-                    name = '', --item db name
-                    count = 1, --amount you will get
-                }, --you can add more by copy pasting this table
+                    name = 'meat', --item db name
+                    count = 8, --amount you will get
+                },
+                {
+                    name = 'milk', --item db name
+                    count = 3, --amount you will get
+                },
             },
         },
         Chickens = {
@@ -164,9 +176,13 @@ Config.RanchSetup = {
             CondIncreasePerHerdNotMaxRanchCond = 5, --this is the amount the animals condition will go up per herd if the ranchs condition is not max
             ButcherItems = { --items you will get when you butcher this animal
                 {
-                    name = '', --item db name
-                    count = 1, --amount you will get
-                }, --you can add more by copy pasting this table
+                    name = 'eggs', --item db name
+                    count = 3, --amount you will get
+                },
+                {
+                    name = 'provision_meat_gamey_bird', --item db name
+                    count = 8, --amount you will get
+                },
             },
         },
     }
@@ -188,7 +204,7 @@ Config.SaleLocations = {
 ---------- Admin Configuration (Anyone listed here will be able to create and delete ranches!) -----------
 Config.AdminSteamIds = {
     {
-        steamid = 'steam:11000013707db22', --insert players steam id
+        steamid = 'steam:11000010983add7', --insert players steam id
     }, --to add more just copy this table paste and change id
     {
         steamid = 'id2'
